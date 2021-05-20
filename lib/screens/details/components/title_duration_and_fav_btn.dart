@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/models/movie.dart';
 
 import '../../../constants.dart';
@@ -23,7 +24,10 @@ class TitleDurationAndFavBtn extends StatelessWidget {
               children: [
                 Text(
                   movie.title,
-                  style: Theme.of(context).textTheme.headline5,
+                  style: GoogleFonts.poppins(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
                 SizedBox(
                   height: kDefaultPadding / 2,
@@ -32,7 +36,7 @@ class TitleDurationAndFavBtn extends StatelessWidget {
                   children: [
                     Text(
                       '${movie.year}',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         color: kTextLightColor,
                       ),
                     ),
@@ -41,7 +45,7 @@ class TitleDurationAndFavBtn extends StatelessWidget {
                     ),
                     Text(
                       'PG-13',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         color: kTextLightColor,
                       ),
                     ),
@@ -50,7 +54,7 @@ class TitleDurationAndFavBtn extends StatelessWidget {
                     ),
                     Text(
                       '2h 32min',
-                      style: TextStyle(
+                      style: GoogleFonts.poppins(
                         color: kTextLightColor,
                       ),
                     ),

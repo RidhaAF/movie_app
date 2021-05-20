@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/screens/details/components/cast_card.dart';
 
 import '../../../constants.dart';
@@ -17,7 +18,10 @@ class CastAndCrew extends StatelessWidget {
         children: [
           Text(
             'Cast & Crew',
-            style: Theme.of(context).textTheme.headline5,
+            style: GoogleFonts.poppins(
+              fontSize: 24,
+              fontWeight: FontWeight.w500,
+            ),
           ),
           SizedBox(height: kDefaultPadding),
           SizedBox(

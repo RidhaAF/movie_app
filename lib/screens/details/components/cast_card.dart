@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../constants.dart';
 
@@ -31,7 +32,10 @@ class CastCard extends StatelessWidget {
           Text(
             cast['orginalName'],
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyText2,
+            style: GoogleFonts.poppins(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
             maxLines: 2,
           ),
           SizedBox(
@@ -41,7 +45,7 @@ class CastCard extends StatelessWidget {
             cast['movieName'],
             maxLines: 1,
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: GoogleFonts.poppins(
               color: kTextLightColor,
             ),
           ),

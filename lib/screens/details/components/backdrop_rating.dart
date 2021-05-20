@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/models/movie.dart';
 
 import '../../../constants.dart';
@@ -63,23 +64,24 @@ class BackdropAndRating extends StatelessWidget {
                       ),
                       RichText(
                         text: TextSpan(
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             color: Colors.black,
                           ),
                           children: [
                             TextSpan(
                               text: '${movie.rating}/',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                 fontSize: 16,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
                             TextSpan(
                               text: '10\n',
+                              style: GoogleFonts.poppins(),
                             ),
                             TextSpan(
                               text: '150,212',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                 color: kTextLightColor,
                               ),
                             ),
@@ -95,8 +97,12 @@ class BackdropAndRating extends StatelessWidget {
                       SizedBox(
                         height: kDefaultPadding / 4,
                       ),
-                      Text('Rate This',
-                          style: Theme.of(context).textTheme.bodyText2),
+                      Text(
+                        'Rate This',
+                        style: GoogleFonts.poppins(
+                          fontSize: 14,
+                        ),
+                      ),
                     ],
                   ),
                   Column(
@@ -110,7 +116,7 @@ class BackdropAndRating extends StatelessWidget {
                         ),
                         child: Text(
                           '${movie.metascoreRating}',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: 16,
                             color: Colors.white,
                             fontWeight: FontWeight.w500,
@@ -122,14 +128,14 @@ class BackdropAndRating extends StatelessWidget {
                       ),
                       Text(
                         'Metascore',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
                       Text(
                         '62 critic review',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           color: kTextLightColor,
                         ),
                       ),

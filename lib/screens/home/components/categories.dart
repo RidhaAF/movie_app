@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../constants.dart';
 
@@ -38,12 +39,13 @@ class _CategoryListState extends State<CategoryList> {
           children: [
             Text(
               categories[index],
-              style: Theme.of(context).textTheme.headline5.copyWith(
-                    fontWeight: FontWeight.w600,
-                    color: index == selectedCategory
-                        ? kTextColor
-                        : Colors.black.withOpacity(0.4),
-                  ),
+              style: GoogleFonts.poppins(
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+                color: index == selectedCategory
+                    ? kTextColor
+                    : Colors.black.withOpacity(0.4),
+              ),
             ),
             Container(
               margin: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),

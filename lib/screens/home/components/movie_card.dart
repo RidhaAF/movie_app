@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/models/movie.dart';
 import 'package:movie_app/screens/details/details_screen.dart';
 
@@ -39,10 +40,10 @@ class MovieCard extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
               child: Text(
                 movie.title,
-                style: Theme.of(context)
-                    .textTheme
-                    .headline5
-                    .copyWith(fontWeight: FontWeight.w600),
+                style: GoogleFonts.poppins(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
             ),
             Row(
@@ -57,10 +58,12 @@ class MovieCard extends StatelessWidget {
                 ),
                 Text(
                   '${movie.rating}',
-                  style: Theme.of(context).textTheme.bodyText2,
+                  style: GoogleFonts.poppins(
+                    fontSize: 14,
+                  ),
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),

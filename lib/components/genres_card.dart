@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../constants.dart';
 
@@ -22,7 +23,7 @@ class GenreCard extends StatelessWidget {
       ),
       child: Text(
         genre,
-        style: TextStyle(
+        style: GoogleFonts.poppins(
           color: kTextColor.withOpacity(0.8),
           fontSize: 16,
         ),

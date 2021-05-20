@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/constants.dart';
 import 'package:movie_app/models/movie.dart';
 import 'package:movie_app/screens/details/components/backdrop_rating.dart';
@@ -29,14 +30,17 @@ class Body extends StatelessWidget {
             ),
             child: Text(
               'Plot Summary',
-              style: Theme.of(context).textTheme.headline5,
+              style: GoogleFonts.poppins(
+                fontSize: 24,
+                fontWeight: FontWeight.w500,
+              ),
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
             child: Text(
               movie.plot,
-              style: TextStyle(
+              style: GoogleFonts.poppins(
                 color: Color(0xFF737599),
               ),
             ),
